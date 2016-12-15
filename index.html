@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Mizona</title>
-    <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="manifest"  href="manifest.json">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
+  <div class="container-fluid">
+    
+  <h2 id="greeting" class="text-center">Where do you want to live?</h2>
 
+<br>
     <form id="form-container" class="form-container">
-        <label for="street">Street: </label><input type="text" id="street" value="">
-        <label for="city">City: </label><input type="text" id="city" value="">
-        <button id="submit-btn">Submit</button>
+    <div class="row">
+      <div class="col-xs-6">
+         <label for="street">Street: </label><input type="text" id="street" value="Madrid">
+      </div>
+      <div class="col-xs-6">
+        <label for="city">City: </label><input type="text" id="city" value="Madrid">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-12">
+         <button id="submit-btn" class="btn btn-block btn-primary">Submit</button>
+      </div>
+    </div>
+ 
     </form>
-
-    <hr>
-
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
-
+<hr class="my-2">
+    
 	<p>
 	    <div align="center">
-	    	<img src="as" id="mifoto" alt="">
+	    	<img class="img-responsive" src="" id="mifoto" alt="">
 	    </div>
     </p>
     
@@ -38,7 +52,7 @@
         </p>
     </div>
     
-
+</div>
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script>
