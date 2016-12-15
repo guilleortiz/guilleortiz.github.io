@@ -1,4 +1,4 @@
-/*var cacheName='MiweatherPWA';
+var cacheName='MiweatherPWA';
 var dataCacheName = 'MiweatherPWA-v2';
 var filesToCache = [
   '/',
@@ -7,7 +7,7 @@ var filesToCache = [
   '/summer-rain.png'
 ];
 
-
+/*
 
 //INTAL DE SERVICE WORKER
 self.addEventListener('install',function (e) {//cacheamos los elemto sdel app shell  htmk css etc
