@@ -2,7 +2,7 @@
   "name": "MiZona",
   "short_name": "MiZona",
   "icons": [{
-      "src": "img/cityscape.png.png",
+      "src": "img/cityscape.png",
       "sizes": "512x512",
       "type": "image/png"
     }],
