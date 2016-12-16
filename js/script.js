@@ -1,4 +1,8 @@
 
+
+
+
+
 function loadData() {
 
     //$("#articulos"). closest('.li').remove();;
@@ -42,9 +46,5 @@ function loadData() {
 };
 
 $('#form-container').submit(loadData);
-function clean () {
-      for(var k = 0; k < nArt; k++){
-          array[k]
-      }
-}
+
 
