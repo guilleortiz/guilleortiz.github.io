@@ -1,9 +1,10 @@
 
 function loadData() {
 
-    $("#articulos").text("");
- 
+    //$("#articulos"). closest('.li').remove();;
 
+  // document.getElementById("articulos").innerHTML = "a";
+     $('ul').empty();
    
     var street=$("#street").val();
     var city=$("#city").val();
@@ -23,7 +24,8 @@ function loadData() {
              var articulos=data.response.docs
               for(var k = 0 ;k < articulos.length; k++){
                   console.log(articulos[k]);
-                  $("#articulos").append("<p><li><a href="+ articulos[k].web_url+">"+articulos[k].headline.print_headline+"</a></br>"+articulos[k].snippet+"</li></p>");
+                  $("#articulos").append("<li id=li"+k+"><a href="+ articulos[k].web_url+">"+articulos[k].headline.print_headline+"</a></br>"+articulos[k].snippet+"</li>");
+                var nart=k;
               }
                 
                 
@@ -40,4 +42,9 @@ function loadData() {
 };
 
 $('#form-container').submit(loadData);
+function clean () {
+      for(var k = 0; k < nArt; k++){
+          array[k]
+      }
+}
 
