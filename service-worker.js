@@ -35,8 +35,10 @@ self.addEventListener('fetch', function(event) {
       .then(function(response) {
         // Cache hit - return response
         if (response) {//If we have a matching response,
+          console.log("cache version");
           return response; //we return the cached value
         }
+          console.log("using network version");
         return fetch(event.request);//otherwise we return the result of a call to fetch
       }
     )
