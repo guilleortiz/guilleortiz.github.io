@@ -87,7 +87,7 @@ self.addEventListener('fetch', function(event) {
 */
 
 
-/*
+
 
 //CLEAN CACHE FILE
 //creo q no funciona
@@ -106,4 +106,3 @@ self.addEventListener('activate', function(e) {
     })
   );
 });
-*/
