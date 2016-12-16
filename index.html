@@ -8,6 +8,7 @@
     <link rel="manifest"  href="manifest.json">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
 </head>
 <body>
   <div class="container-fluid">
@@ -46,7 +47,7 @@
     
 	<p>
 	    <div align="center">
-	    	<img class="img-responsive" src="" id="mifoto" alt="">
+	    	<img class="img-responsive" src="img/barrio.png" id="mifoto" alt="">
 	    </div>
     </p>
     
@@ -73,25 +74,13 @@
      if ('serviceWorker' in navigator) {
       console.log("Will service worker register?");
       navigator.serviceWorker.register('service-worker.js').then(function(reg){
-        console.log("Yes it did.");
+        console.log("Yes it did in: "+reg.scope);
       }).catch(function(err) {
         console.log("No it didn't. This happened: ", err)
       });
     }
 </script>
 
-<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBnGffyoPz2a4NJBFHT4bETm4joiFBTPaU",
-    authDomain: "mi-zona.firebaseapp.com",
-    databaseURL: "https://mi-zona.firebaseio.com",
-    storageBucket: "mi-zona.appspot.com",
-    messagingSenderId: "225671647091"
-  };
-  firebase.initializeApp(config);
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>
