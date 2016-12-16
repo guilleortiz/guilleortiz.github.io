@@ -1,17 +1,8 @@
 
 function loadData() {
 
-    var $body = $('body');
-    var $wikiElem = $('#wikipedia-links');
-    var $nytHeaderElem = $('#nytimes-header');
-    var $nytElem = $('#nytimes-articles');
-    var $greeting = $('#greeting');
-
-    // clear out old data before new request
-    $wikiElem.text("");
-    $nytElem.text("");
-
-    // load streetview
+    $("#articulos").text("");
+ 
 
    
     var street=$("#street").val();
@@ -19,14 +10,14 @@ function loadData() {
     var key='AIzaSyDYqv5UMz5otRTOvGfB8rS-KRHwczz-XjE';
     var url='https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+street+', '+city+'&heading=151.78&pitch=-0.76&key='+key;
     
-    console.log(url);
+   // console.log(url);
     $("#mifoto").attr('src',url);
 
     var NYTURL='658f10d4cd10417ca14e9010f9ab0b55';
         $.ajax({
             url: 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+city+'&sort=newest&api-key='+NYTURL,
-            type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
-            data: {}, // Additional parameters here
+            type: 'GET', 
+            data: {}, 
             dataType: 'json',
             success: function(data) {
              var articulos=data.response.docs
