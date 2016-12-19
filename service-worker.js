@@ -3,8 +3,14 @@ var filesToCache = [
   '/',
   '/index.html',
   '/js/script.js',
-  '/img/cityscape-512.png',
-  '/img/cityscape-128.png',
+  '/img/city512.png',
+  '/img/city384.png',
+  '/img/city256.png',
+  '/img/city192.png',
+  '/img/city144.png',
+  '/img/city128.png',
+  '/img/city96.png',
+  '/img/city48.png',
   '/img/barrio.png'
 ];
 
