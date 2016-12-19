@@ -23,7 +23,7 @@ self.addEventListener('install',function (e) {//cacheamos los elemto sdel app sh
 	e.waitUntil(
 		caches.open(cacheName)//abrimos cache
     .then(function (cache) {
-       console.log('Opened cache');
+       console.log('Install cache');
 			return cache.addAll(filesToCache);//takes a list of urls and then fetches them from de server and adds the responseto the cache
 			
 		})
@@ -35,7 +35,7 @@ This is a chain of promises (caches.open() and cache.addAll()).
 The event.waitUntil() method takes a promise and uses it to know how long installation takes, and whether it succeeded.
 Defining a long list of files will increase the chance that one file may fail to cache, leading to your service worker not getting installed.
 */
-/*
+
 
 //FETCH
 self.addEventListener('fetch', function(event) {
@@ -49,11 +49,10 @@ self.addEventListener('fetch', function(event) {
         }
           console.log("using network version");
         return fetch(event.request);//otherwise we return the result of a call to fetch
-      }
-    )
+      })
   );
 });
-*/
+
 
 /*
 self.addEventListener('fetch', function(event) {
