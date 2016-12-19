@@ -6,10 +6,10 @@ var cont =0;
 function loadData() {
   cont ++;
   console.log(cont);
-  if (cont=2) {
+  if (cont==3) {
     alert("Add me to home screem to enjoy!!");
   }
-  alert("Add me to home screem to enjoy!!"+cont);
+  
 
     //$("#articulos"). closest('.li').remove();;
 
