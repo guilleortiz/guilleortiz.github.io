@@ -34,15 +34,15 @@
       "sizes": "512x512",
       "type": "image/png"
     },{
-      "src": "img/apple-touch-icon.png",
+      "src": "img/fav/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },{
-      "src": "img/mstile-150x150.png",
+      "src": "img/fav/mstile-150x150.png",
       "sizes": "150x150",
       "type": "image/png"
     },{
-      "src": "img/safari-pinned-tab.svg",
+      "src": "img/fav/safari-pinned-tab.svg",
       "sizes": "150x150",
       "type": "image/svg"
     }],
