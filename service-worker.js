@@ -17,7 +17,7 @@ var filesToCache = [
 //////Open a cache.
 ////Cache our files.
 //Confirm whether all the required assets are cached or not.
-/*
+
 //INTAL DE SERVICE WORKER
 self.addEventListener('install',function (e) {//cacheamos los elemto sdel app shell  htmk css etc
 	e.waitUntil(
@@ -29,7 +29,6 @@ self.addEventListener('install',function (e) {//cacheamos los elemto sdel app sh
 		})
 	)
 })
-*/
 
 /*
 This is a chain of promises (caches.open() and cache.addAll()). 
