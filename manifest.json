@@ -33,6 +33,18 @@
       "src": "img/city512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },{
+      "src": "img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },{
+      "src": "img/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },{
+      "src": "img/safari-pinned-tab.svg",
+      "sizes": "150x150",
+      "type": "image/svg"
     }],
   "start_url": "/index.html",
   "display": "standalone",
