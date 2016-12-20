@@ -19,7 +19,7 @@ function loadData() {
    //maps api
     var street=$("#street").val();
     var city=$("#city").val();
-    var key='AIzaSyDYqv5UMz5otRTOvGfB8rS-KRHwczz-XjE';
+    var key='';
     var url='https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+street+', '+city+'&heading=151.78&pitch=-0.76&key='+key;
     
    // console.log(url);
@@ -31,7 +31,7 @@ function loadData() {
     $("#mifoto").attr('src',url);
 
     //NY API
-    var NYTURL='658f10d4cd10417ca14e9010f9ab0b55';
+    var NYTURL='';
         $.ajax({
             url: 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+city+'&sort=newest&api-key='+NYTURL,
             type: 'GET', 
