@@ -5,7 +5,7 @@ var cont =0;
 
 function loadData() {
   cont ++;
-   alert("Add me to homescreem to enjoy!!");
+   //alert("Add me to homescreem to enjoy!!");
   console.log(cont);
   if (cont==3) {
     alert("Add me to homescreem to enjoy!!");
