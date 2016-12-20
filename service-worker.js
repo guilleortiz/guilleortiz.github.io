@@ -101,7 +101,7 @@ self.addEventListener('fetch', function(event) {
 
 //CLEAN CACHE FILE
 //creo q no funciona
-/*
+
 self.addEventListener('activate', function(e) {
   var cacheWhitelist =['MizonaCache-v1'];
   console.log('[ServiceWorker] Activate');
@@ -117,4 +117,3 @@ self.addEventListener('activate', function(e) {
     })
   );
 });
-*/
